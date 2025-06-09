@@ -1,0 +1,18 @@
+EBSD data requires that the CIF files contain the crystal symmetry information, which is often lost in various POSCAR2CIF codes, as POSCARs do not contain symmetry data. 
+
+## To convert POSCAR to CIF 
+Based on experience, the tool below converts POSCAR to CIF while searching for the highest symmetry structure:
+
+https://uspex-team.org/online_utilities/poscar2cif/
+
+copy paste the POSCAR into the website.
+
+
+## To find the rotation matrix
+
+If it is a simple axis rotation, you can use CHATGPT to find the rotation matrix
+Use OVITO and use Affine Transformation to check that this is correct. 
+However, OVITO cannot output CIF files. 
+So use VESTA, input the rotation matrix, and export as CIF file.
+
+The CIF file now contains the rotated structure and all its symmetry information is preserved!
