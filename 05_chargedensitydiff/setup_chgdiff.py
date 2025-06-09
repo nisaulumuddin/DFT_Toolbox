@@ -3,8 +3,7 @@
 import numpy as np
 import sys
 
-sys.path.append('/home/wz300646/Scripts/Utilities_nu/')
-import vasp_class_nu as vc
+from vaspreader import vasp_class_nu as vc
 import vasp6_class_nu as vc6
 import argparse
 import os
